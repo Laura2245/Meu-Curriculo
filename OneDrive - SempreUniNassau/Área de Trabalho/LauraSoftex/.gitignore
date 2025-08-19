@@ -1,0 +1,20 @@
+# Ignorar arquivos do sistema
+AppData/
+*.log
+*.tmp
+*.cache
+*.bak
+
+# Ignorar arquivos do VSCode e Windows
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Evitar arquivos grandes ou binários
+*.exe
+*.zip
+*.dll
+*.iso
+
+# Outras pastas que não fazem parte do seu projeto
+node_modules/
