@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Meu Currículo</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; color: #333; }
-    header { text-align: center; }
-    .section { margin-bottom: 20px; }
-    .section h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header>
-    <h1>Seu Nome</h1>
-    <p>Você pode até incluir um foto ou contato</p>
+    <h1>Maria Laura</h1>
+    <p>Desenvolvedor Front-End | marialaurasantana89@gmail.com| (81) 99831-9374</p>
   </header>
-  <div class="section">
+
+  <section>
+    <h2>Resumo</h2>
+    <p>Desenvolvedor Front-End com 1 ano de experiência em criação de sites responsivos e aplicações web modernas usando HTML, CSS, JavaScript e framework.</p>
+  </section>
+
+  <section>
     <h2>Experiência</h2>
     <ul>
-      <li>Desenvolvedora de site web</li>
-      <li>...</li>
+      <li>
+        <strong>Interdata - Desenvolvedor Java/Front-End</strong> (05/2025)<br />
+        Desenvolvimento de interfaces responsivas e integração com APIs REST.
+      </li>
+     
     </ul>
-  </div>
-  <div class="section">
-    <h2>Formação</h2>
-    <p>Curso de JAVA - Interdata Cursos, Front-end - Softex Pernambuco –  Em andamento</p>
-  </div>
-  <div class="section">
+  </section>
+
+  <section>
+    <h2>Educação</h2>
+    <ul>
+      <li>
+        Bacharel em Sistemas de Informação - Universidade Uninassau (trancada)
+      </li>
+    </ul>
+  </section>
+
+  <section>
     <h2>Habilidades</h2>
-    <p>HTML, CSS, JavaScript, Git, Linux, etc.</p>
-  </div>
-  <footer>
-    <p>Contato: marialaurasantana89@gmail.com</p>
-  </footer>
+    <button class="btn-toggle" onclick="toggleSkills()">Mostrar/Ocultar habilidades</button>
+    <ul id="skills-list" class="hidden">
+      <li>HTML5, CSS3, JavaScript (ES6+)</li>
+      <li>React, Vue.js</li>
+      <li>Git, GitHub</li>
+      <li>Design responsivo e acessibilidade</li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
